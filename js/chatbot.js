@@ -6,7 +6,7 @@ async function sendMessage() {
     chatBox.innerHTML += `<p><b>Tú:</b> ${userInput}</p>`;
 
     try {
-        const response = await fetch("https://api.us-south.assistant.watson.cloud.ibm.com/instances/cf30be71-6821-4f50-a845-684b26e34253", {
+        const response = await fetch("https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fus-south.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-cf30be71-6821-4f50-a845-684b26e34253%3A%3A9f1a2f7a-a393-4337-957f-9f39eb4f2140&integrationID=8bda4a63-ba07-4458-bbd1-f47961f7426c&region=us-south&serviceInstanceID=cf30be71-6821-4f50-a845-684b26e34253", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: userInput }),
