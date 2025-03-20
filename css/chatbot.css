@@ -1,0 +1,20 @@
+#chat-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#chat-box {
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    width: 80%;
+}
